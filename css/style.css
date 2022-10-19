@@ -1,0 +1,278 @@
+main{
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header{
+    height:70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: black;
+    flex-wrap: nowrap;
+    z-index:999 ;  
+}
+
+ul{
+    height:70px;
+    width: 300px;
+    list-style: none;    
+}
+
+ul li{
+    display: inline;
+    width: 50px;
+    height: 70px;
+    border-right:solid orangered ;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.rightnav{
+    position: absolute;
+    right: 0;
+}
+
+ul li:hover{
+    cursor: pointer;
+    background: rgb(85, 81, 81);
+}
+
+aside {
+    height: 100px;
+    width: 300px;
+    order: 2;
+    position: relative;
+    left: 0;
+    top: 5px;
+}
+
+.sec1{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+.PIC{
+    filter: drop-shadow(rgba(34, 33, 33, 0.082));
+    -webkit-filter: drop-shadow(rgba(34, 33, 33, 0.082));
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.trans{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: 2;
+    width: 100px;
+}
+
+a{
+    display: block;
+}
+
+.f{
+    height: 50px;
+    width: 140px;
+    background:rgb(7, 30, 233);
+    color: white;
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top:0px;
+    left: -120px;
+    line-height: 50px;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.t{
+    height: 50px;
+    width: 140px;
+    background: rgb(24, 219, 233);
+    color: white;
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    left: -120px;
+    top: 10px;
+    line-height: 50px;
+    text-align: center;    
+    border: 3px solid rgb(24, 219, 233);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.f:hover{
+    position: relative;
+    left: 0px;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.t:hover{
+    position: relative;
+    left: 0px;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.sec2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    background: dimgray;
+}
+
+.block1{
+    height:300px;
+    width:30%;
+    order:1;
+    box-sizing: border-box;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.block2{
+    height: 300px;
+    width:30%;
+    order:2;
+    box-sizing: border-box;
+    background: white;
+}
+
+.block3{
+    height: 300px;
+    width:30%;
+    order:3;
+    box-sizing: border-box;
+    background: white;
+    padding:0 ;
+    margin: 0;
+}
+
+h1{
+    height: 40px;
+    width: 100%;
+    line-height:40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+ .block1 h1{
+    background: rgb(206, 69, 6);
+}
+.block2 h1{
+    background: darkmagenta;
+}
+.block3 h1{
+    background: darkred;
+}
+.block1 p{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+}
+.block2 p{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+}
+.block3 p{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+}
+.sec3{
+    height:350px;
+    width:100%;
+    display: flex;
+    flex-flow: row  nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.leftphoto{
+    height: 100%;
+    width: 500px;
+    overflow: hidden;
+    order:1;
+    /* position: absolute; */
+    /* left: 0px; */
+}
+.leftphoto img{
+    height: 100%;
+    width: 500px;
+    background: rgb(115, 115, 199); 
+}
+
+.right-text{
+    height: 100%;
+    width: 600px;
+    background:grey;
+    order:2;
+    overflow: hidden;
+    flex-grow: 1;
+    /* position: absolute; */
+    /* right: 0px; */
+}
+
+.right-text p{
+padding: 10px;
+margin: auto;
+color: antiquewhite;
+font-size: 20px;    
+}
+
+footer{
+    background-color: rgb(53, 48, 48);
+    height: 70px;
+    width:100%;
+  display: flex;
+  justify-content: center;
+    
+
+}
+footer p{
+    padding: 0;
+    margin:  0 auto ;
+    color:white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 70px;
+}
